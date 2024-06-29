@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tiny5&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+html{
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+/* Navbar */
+
+#home{
+    padding: 50px;
+}
+
+.heading{
+    font-size: 5rem;
+    text-align: center;
+}
+
+.heading:hover{
+    transition: 300ms;
+    color: gray;
+    cursor: default;
+}
+
+#navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+#navbar{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin: 5px;
+    padding: 5px;
+    background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+    border-radius: 50px;
+}
+
+#navbar .logo{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    cursor: default;
+}
+
+#navbar .logo span{
+    color: #ffecd2;
+}
+
+.nav-list{
+    display: flex;
+    margin-top: 15px;
+    gap: 2rem;
+}
+
+.nav-list li{
+    list-style-type: none;
+}
+
+.nav-list a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-list a:hover{
+    transition: 300ms;
+    color: #ffecd2;
+}
+
+.nav-list a:active{
+    color: white;
+}
+
+#home{
+    margin-top: 4rem;
+}
+
+.grid-template{
+    display: grid;
+    grid-template-columns: 400px 350px 250px 250px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    justify-content: center;
+    margin-right: 15%;
+}
+
+.grid-item1{
+    height: 610px;
+    border-radius: 30px;
+    background: #FFD580;
+    text-align: center;
+    padding: 10px;
+}
+
+.grid-item1:hover{
+    cursor: default;
+    box-shadow: -10px 3px 10px 5px #FFEED4;
+    transition: 200ms;
+    background: #FFDEAD;
+
+}
+
+.grid-item1 img{
+    border-radius: 20px;
+}
+
+.grid-item2{
+    height: 409px;
+    border-radius: 30px;
+    background: #FAC898;
+    text-align: center;
+}
+
+.grid-item2:hover{
+    cursor: default;
+    transition: 200ms;
+    box-shadow: 0px -20px 10px 5px #FFEED4;
+    background: #FFDEAD;
+}
+
+.grid-item2 img{
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+.grid-item3{
+    height: 595px;
+    width: 440px;
+    border-radius: 30px;
+    background: #FFEED4;
+    text-align: center;
+}
+
+.grid-item3:hover{
+    cursor: default;
+    transition: 200ms;
+    box-shadow: 10px 3px 10px 5px #FFEED4;
+    background: #FFDEAD;
+}
+
+.grid-item3 img{
+    margin-top: 10px;
+    border-radius: 30px;
+}
+
+.grid-item4{
+    margin-left: 200px;
+    width: 350px;
+    border-radius: 30px;
+    background: #FAC898;
+    text-align: center;
+}
+
+.grid-item4:hover{
+    cursor: default;
+    transition: 200ms;
+    box-shadow: 0px -20px 10px 5px #FFEED4;
+    background: #FFDEAD;
+}
+
+.grid-item4 img{
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+/* Links below the crew */
+.links{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.75rem;
+}
+
+.links-arb{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.4rem;
+}
+
+.links-furkan{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem; 
+}
+
+.links-dilara{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.2rem; 
+}
+/* Skills */
+
+#skills{
+    background-image: url(/PNG/drawkit-transport-scene-1.png);
+    background-size: 1500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 450px;
+    text-align: center;
+}
+
+#skills h1{
+    font-size: 5rem;
+}
+
+.grid-template-skills{
+    display: grid;
+    justify-content: space-around;
+    grid-template-rows: 300px 300px;
+    grid-template-columns: 500px 500px;
+    grid-column-gap: 30px;
+    grid-row-gap: 65px;
+
+
+}
+
+.grid-skill{
+    border: 1px solid gray;
+    text-align: center;
+    background-color: white;
+    color: black;
+    border-radius: 30px;
+}
+
+
+
+.grid svg{
+    width: 3rem;
+}
+
+.grid-skill svg{
+    width: 4.2rem;
+}
+
+.skill{
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-align: right;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+    margin-left: 1rem;
+    border-radius: 50px;
+}
+
+.html {width: 89%; background-color: #04AA6D;}
+.css {width: 64%; background-color: #2196F3;}
+.js {width: 40%; background-color: #FAD5A5;}
+.react {width: 13%; background-color: #808080;}
+
+/* Serivces */
+
+#services{
+    background-image: url(/PNG/drawkit-transport-scene-2.png);
+    background-size: 1500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 350px;
+}
+
+.container-services{
+    display: grid;
+    grid-template-rows: 500px 500px 500px;
+    grid-template-columns: 700px 700px 700px;
+    grid-column-gap: 40px;
+    grid-row-gap: 7rem;
+    margin-left: 40px;
+    margin-top: 50px;
+    
+
+}
+
+#services img{
+    width: 300px;
+}
+
+.fixing{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 500px;
+    text-align: center;
+    background-color: #FAD5A5;
+    border-radius: 15px;
+    height: 450px;
+}
+
+.btn{
+    font-weight: 500;
+    font-size: 1rem;
+    margin-top: 10px;
+    color: white;
+    background-color: #5C4033;
+    border-radius: 15px;
+    border: 1px solid white;
+    padding: 15px;
+}
+
+.btn:hover{
+    background-color: #fcb69f;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.btn:active{
+    color: black;
+}
+
+.web{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 500px;
+    text-align: center;
+    background-color: #FAD5A5;
+    border-radius: 15px;
+    height: 450px;
+}
+
+.data{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 500px;
+    text-align: center;
+    background-color: #FAD5A5;
+    border-radius: 15px;
+    height: 465px;
+}
+
+.arduino{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 500px;
+    text-align: center;
+    background-color: #FAD5A5;
+    border-radius: 15px;
+    height: 480px;
+}
+
+.mlearning{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 500px;
+    text-align: center;
+    background-color: #FAD5A5;
+    border-radius: 15px;
+    height: 500px;
+}
+
+.electronic{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 500px;
+    text-align: center;
+    background-color: #FAD5A5;
+    border-radius: 15px;
+    height:500px;
+}
+
+#contact .iframe{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    width: 500px;
+    float: right;
+    margin-right: 150px;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #5C4033;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #5C4033;
+  }
+  
+  .contact-form {
+    text-align: center;
+    border-radius: 50px;
+    width: 600px;
+    border-radius: 5px;
+    background-color: #FAC898;
+    padding: 20px;
+  }
+
+  .contact-form-display{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    margin-bottom: 50px;
+  }
+
+.footer{
+    opacity: 0.75;
+    border-top: 1px solid black;
+    text-align: center;
+}
